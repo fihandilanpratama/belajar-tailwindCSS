@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link href="../output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-primary">
+    <div class="container px-7 font-inter">
+        <h2 class="text-2xl text-center font-inter mt-10 mb-9">Wellcome!</h2>
+        <p class="text-lg mb-9">Sign up for the chunky app</p>
+        <form action="#">
+            <div class="mb-3">
+                <input type="text" placeholder="Enter your name" class="w-full text-base px-[14px] py-[18px] placeholder:text-slate-500 rounded-md" name="name" id="name">
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="last name" class="w-full text-base px-[14px] py-[18px] placeholder:text-slate-500 rounded-md" name="last_name" id="last_name">
+            </div>
+            <div class="mb-3">
+                <input type="text" placeholder="Email/phone number" class="w-full text-base px-[14px] py-[18px] placeholder:text-slate-500 rounded-md" name="email_or_phone" id="email_or_phone">
+            </div>
+            <div class="mb-3">
+                <input type="password" placeholder="Password" class="w-full text-base px-[14px] py-[18px] placeholder:text-slate-500 rounded-md" name="password" id="password">
+            </div>
+            <div class="mb-5">
+                <input type="password" placeholder="Confirm password" class="w-full text-base px-[14px] py-[18px] placeholder:text-slate-500 rounded-md" name="conform_password" id="conform_password">
+            </div>
+            <div class=" mb-9">
+                <img src="../images/icon_task done.png" alt="" width="20" class="float-left mt-[3px] mr-1">
+                <p class="text-[11px]">By clicking on 'Sign Up', you are agreeing to the chunky app <a href="#" class="text-secondary">Terms of Service</a> and <a href="#" class="text-secondary">Privacy Policy</a></p>
+            </div>
+            <div class="flex justify-center mb-6">
+                <button type="submit" class="inline-block bg-secondary text-white text-2xl w-[196px] h-14 rounded-md leading-[56px] text-center">Sign Up</button>
+            </div>
+            <p class="text-[13px] text-center">Already have an account? <a href="login.html" class="text-secondary">Log In</a></p>
+        </form>
+    </div>
+</body>
+</html>

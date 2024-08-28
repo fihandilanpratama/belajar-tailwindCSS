@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hello</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-slate-300 h-full min-h-screen">
+
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white text-lg font-semibold capitalize">belajar tailwind</div>
+          <div class="space-x-4">
+              <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+          </div>
+      </div>
+    </nav>
+
+    <h1 class="text-2xl text-center font-bold uppercase mt-5 animate-bounce">
+      "psuedo-class"
+    </h1>
+    
+    <div class="flex flex-col justify-center mt-7 mx-32">
+      <button
+        class="bg-sky-500 px-5 py-2 rounded-lg font-semibold hover:bg-sky-600 active:bg-sky-700"
+      >
+        simpan
+      </button>
+
+      <div
+        class="max-w-lg my-10 border bg-slate-100 border-slate-200 rounded-xl p-5 shadow-md hover:bg-slate-800 group"
+      >
+        <h5 class="font-bold text-slate-700 mb-3 group-hover:text-slate-200">
+          My Card
+        </h5>
+        <p
+          class="text-slate-600 text-justify group-hover:text-slate-200 selection:bg-pink-500"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
+          cum nemo placeat ipsam voluptas, pariatur itaque nobis labore tempore
+          ad sapiente quasi doloremque molestiae dolor sit tenetur recusandae
+          sequi repellendus.
+        </p>
+      </div>
+
+      <div
+        class="max-w-lg border bg-slate-100 border-slate-200 rounded-xl p-5 shadow-md"
+      >
+        <h3 class="text-2xl font-bold text-center uppercase mb-2">Login</h3>
+        <form action="">
+          <label for="email" class="block mt-3">
+            <span class="font-semibold after:content-['*'] after:text-pink-600">Email</span>
+            <input type="email" id="email" class="block mt-1 px-3 py-1 border rounded shadow w-full placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 invalid:text-pink-600 invalid:focus:ring-pink-500 peer" placeholder="masukkan email" autocomplete="off" autofocus>
+            <p class="text-sm text-pink-600 mt-1 hidden peer-invalid:block">email tidak valid</p>
+          </label>
+
+          <label for="password" class="block mt-3">
+            <span class="font-semibold after:content-['*'] after:text-pink-600">Password</span>
+            <input type="password" id="password" class="block mt-1 px-3 py-1 border rounded shadow w-full placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 invalid:focus:ring-pink-500 peer" placeholder="masukkan password" autocomplete="off" minlength="5">
+            <p class="text-sm text-pink-600 mt-1 hidden peer-invalid:block">password minimal 5 karakter</p>
+          </label>
+
+          <button type="submit" class="bg-sky-500 px-5 py-1 rounded-lg font-semibold mt-3 text-white hover:bg-sky-600 active:bg-sky-700">simpan</button>
+        </form>
+      </div>
+
+      <p class="mt-10">Refrensi : <a href="https://tailwindcss.com/docs/hover-focus-and-other-states" class="text-blue-500 hover:underline focus:text-red-500" target="_blank">hover-focus-and-other-states</a></p>
+
+
+    </div>
+
+    <footer class="mt-10 py-4 bg-slate-800">
+      <p class="text-slate-200 text-center">copyright © fihan 2024</p>
+    </footer>
+  </body>
+</html>
